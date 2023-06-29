@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+  <body>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 id="heading-v1">Submit Channel Embed</h1>
+      <button id="toggle-dm-channel" class="btn btn-success">Toggle DM and Channel Embed</button>
+
+      <form style="display: none;" action="/" id="message-embed-dm" method="POST">
+        <div id="titledm-group" class="form-group">
+          <label for="titledm">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="titledm"
+            name="titledm"
+            placeholder="Title"
+          />
+        </div>
+
+        <div id="descriptiondm-group" class="form-group">
+          <label for="descriptiondm">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="descriptiondm"
+            name="descriptiondm"
+            placeholder="Description"
+          />
+        </div>
+
+        <div id="footerdm-group" class="form-group">
+          <label for="footerdm">Footer</label>
+          <input
+            type="text"
+            class="form-control"
+            id="footerdm"
+            name="footerdm"
+            placeholder="Footer"
+          />
+        </div>
+
+        <div id="field1dm-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 1</h4>
+            <label for="field1dm-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field1dm-title"
+              name="field1dm-title"
+              placeholder="title"
+            />
+            <label for="field1dm-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field1dm-value"
+              name="field1dm-value"
+              placeholder="value"
+            />
+          </div>
+
+          <div id="field2dm-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 2</h4>
+            <label for="field2dm-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field2dm-title"
+              name="field2dm-title"
+              placeholder="title"
+            />
+            <label for="field2dm-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field2dm-value"
+              name="field2dm-value"
+              placeholder="value"
+            />
+          </div>
+
+          <div id="field3dm-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 3</h4>
+            <label for="field3dm-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field3dm-title"
+              name="field3dm-title"
+              placeholder="title"
+            />
+            <label for="field3dm-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field3dm-value"
+              name="field3dm-value"
+              placeholder="value"
+            />
+          </div>
+
+
+          <div id="userId-group" class="form-group">
+            <label for="userId">User ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userId"
+              name="userId"
+              placeholder="userId"
+            />
+          </div>
+
+        <button type="submit" class="btn btn-success">
+          Submit
+        </button>
+      </form>
+
+      <form action="/" id="message-embed-channel" method="POST">
+        <div id="title-group" class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            placeholder="Title"
+          />
+        </div>
+
+        <div id="description-group" class="form-group">
+          <label for="description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            placeholder="Description"
+          />
+        </div>
+
+        <div id="footer-group" class="form-group">
+          <label for="footer">Footer</label>
+          <input
+            type="text"
+            class="form-control"
+            id="footer"
+            name="footer"
+            placeholder="Footer"
+          />
+        </div>
+
+        <div id="field1-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 1</h4>
+            <label for="field1-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field1-title"
+              name="field1-title"
+              placeholder="title"
+            />
+            <label for="field1-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field1-value"
+              name="field1-value"
+              placeholder="value"
+            />
+          </div>
+
+          <div id="field2-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 2</h4>
+            <label for="field2-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field2-title"
+              name="field2-title"
+              placeholder="title"
+            />
+            <label for="field2-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field2-value"
+              name="field2-value"
+              placeholder="value"
+            />
+          </div>
+
+          <div id="field3-group" class="form-group">
+            <h4 style="font-weight: bold;">Field 3</h4>
+            <label for="field3-title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field3-title"
+              name="field3-title"
+              placeholder="title"
+            />
+            <label for="field3-value">Value</label>
+            <input
+              type="text"
+              class="form-control"
+              id="field3-value"
+              name="field3-value"
+              placeholder="value"
+            />
+          </div>
+
+
+          <div id="channelId-group" class="form-group">
+            <label for="channelId">Channel ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="channelId"
+              name="channelId"
+              placeholder="channelId"
+            />
+          </div>
+          <div id="bulkDelete-group" class="form-group">
+            <label for="bulkDelete">Do you want to Bulk Delete the messages in this channel?</label>
+            <input
+              type="checkbox"
+              class="form-control"
+              id="bulkDelete"
+              name="bulkDelete"
+            />
+          </div>
+
+        <button type="submit" class="btn btn-success">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+
+  <script>
+    const embeddm = document.querySelector('#message-embed-dm');
+    const embedchannel = document.querySelector('#message-embed-channel');
+    const heading_v1 = document.querySelector('#heading-v1');
+
+    document.querySelector('#toggle-dm-channel').addEventListener('click', () => {
+        if (window.getComputedStyle(embedchannel).display == "none") {
+            embeddm.style.display = 'none';
+            heading_v1.innerHTML = 'Submit Channel Embed';
+            embedchannel.style.display = 'block';
+        } else {
+            embedchannel.style.display = 'none';
+            heading_v1.innerHTML = 'Submit DM Embed';
+            embeddm.style.display = 'block';
+        }
+    });
+
+    $(document).ready(function () {
+        $("form").submit(function (event) {
+            if (window.getComputedStyle(embeddm).display == "none") {
+                var formData = {
+                    title: $("#title").val(),
+                    description: $("#description").val(),
+                    footer: $("#footer").val(),
+                    field1: {
+                        title: $("#field1-title").val(),
+                        value: $("#field1-value").val()
+                    },
+                    field2: {
+                        title: $("#field2-title").val(),
+                        value: $("#field2-value").val()
+                    },
+                    field3: {
+                        title: $("#field3-title").val(),
+                        value: $("#field3-value").val()
+                    },
+                    channelId: $("#channelId").val(),
+                    bulkDelete: document.getElementById('#bulkDelete').checked
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/embeds/channel",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    console.log(data);
+
+                    console.log(formData);
+                });
+
+                event.preventDefault();
+            } else {
+                var formData = {
+                    title: $("#titledm").val(),
+                    description: $("#descriptiondm").val(),
+                    footer: $("#footerdm").val(),
+                    field1: {
+                        title: $("#field1dm-title").val(),
+                        value: $("#field1dm-value").val()
+                    },
+                    field2: {
+                        title: $("#field2dm-title").val(),
+                        value: $("#field2dm-value").val()
+                    },
+                    field3: {
+                        title: $("#field3dm-title").val(),
+                        value: $("#field3dm-value").val()
+                    },
+                    userId: $("#userId").val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/embeds/dm",
+                    data: formData,
+                    dataType: "json",
+                    encode: true,
+                }).done(function (data) {
+                    console.log(data);
+
+                    console.log(formData);
+                });
+
+                event.preventDefault();
+            }
+        });
+    });
+  </script>
+</html>
